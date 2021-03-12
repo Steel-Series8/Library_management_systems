@@ -4,6 +4,7 @@ import java.sql.*;
 
 public class PostgreSqlDB implements IDB {
 
+    
     @Override
     public Connection getConnection() throws SQLException, ClassNotFoundException {
         String connectionUrl = "jdbc:postgresql://localhost:5432/DataStoreForEndtermOOP";
@@ -13,6 +14,7 @@ public class PostgreSqlDB implements IDB {
         } catch (Exception e) {
             System.out.println(e);
             throw e;
+            
         }
     }
-}
+} 
