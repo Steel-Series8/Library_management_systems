@@ -27,9 +27,11 @@ public class OrderController {
         return (order == null ? "Order was not found!" : order.toString());
     }
 
+    
     public String getAllOrder() {
         List<Order> orders = repo.getAllOrders();
 
+        
         return orders.toString();
     }
 
