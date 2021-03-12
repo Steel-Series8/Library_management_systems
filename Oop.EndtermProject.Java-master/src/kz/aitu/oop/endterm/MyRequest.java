@@ -221,11 +221,15 @@ public class MyRequest {
                     break;
                 }
 
-            } catch (Exception e) {
+                
+            } 
+            catch (Exception e) {
                 System.out.println(e.getMessage());
                 scanner.next();
+                
             }
 
+            
             System.out.println("***********************************");
         }
     }
@@ -244,6 +248,7 @@ public class MyRequest {
         System.out.println("Please enter librarian_id");
         int librarian_id = scanner.nextInt();
 
+        
         String response = orderController.createOrder(name, book_name, order_date,order_num,subscriber_id,librarian_id);
         System.out.println(response);
     }
@@ -259,7 +264,5 @@ public class MyRequest {
 
         String response = orderController.getOrder(id);
         System.out.println(response);
-    }
-
-
+    } 
 }
