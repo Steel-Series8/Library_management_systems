@@ -1,5 +1,6 @@
 package kz.aitu.oop.endterm.enteties;
 
+
 public class Books extends Subscribers{
     private int book_id;
     private String from_;
@@ -7,6 +8,7 @@ public class Books extends Subscribers{
     private int read_time;
     private int book_cost;
 
+    
     public Books(int book_id, String from_, String to_,
                   int read_time, int book_cost) {
         setBook_id(book_id);
@@ -25,6 +27,7 @@ public class Books extends Subscribers{
         return book_id;
     }
 
+    
     public void setFrom_(String from_) {
         this.from_ = from_;
     }
