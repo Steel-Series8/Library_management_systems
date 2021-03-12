@@ -1,5 +1,6 @@
 package kz.aitu.oop.endterm.enteties;
 
+
 public class Order {
     private int id;
     private String name;
